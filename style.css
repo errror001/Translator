@@ -1,0 +1,49 @@
+/* Apply the Inter font to all elements */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000000; /* Updated to black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* Custom styles for the container */
+.container {
+    background-color: #1f2937; /* Updated to dark gray */
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 48rem;
+}
+/* Style for text areas and dropdowns */
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    background-color: #111827; /* Updated to a very dark gray */
+    border: 1px solid #4b5563; /* Updated border color for contrast */
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    transition: all 0.2s ease-in-out;
+    resize: none;
+    color: #d1d5db; /* Updated text color */
+}
+.input-group textarea:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #60a5fa; /* Updated focus border color */
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.5); /* Updated focus shadow */
+}
+/* Custom focus ring for buttons */
+.translate-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.5); /* Updated focus shadow */
+}
+/* Glowing effect for the button */
+.glowing-effect {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.glowing-effect:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1), 0 0 25px rgba(0, 0, 0, 0.8), 0 0 35px rgba(0, 0, 0, 0.6);
+}
